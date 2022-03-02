@@ -83,6 +83,14 @@ footer {
     margin-left: 10%;
     margin-right: 10%;
 }
+footer a {
+    text-decoration: none;
+    color: crimson;
+}
+footer a:hover {
+    color: crimson;
+    text-decoration: underline;
+}
 
 
 @media (max-width: 1000px){
