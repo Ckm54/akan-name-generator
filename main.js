@@ -26,7 +26,7 @@ function getAkanName() {
     }
     if(!isNaN(dayOfWeek)){
         if (gender === "male"){
-            display.innerHTML = "Your Akan name is " + MaleNames[dayOfWeek] + " and you were born on " + WeekDays[dayOfWeek];
+            display.innerHTML = "Your Akan name is " + MaleNames[dayOfWeek] + " and you were born on a " + WeekDays[dayOfWeek];
         }
         else if (gender === "female"){
             display.innerHTML = "Your Akan name is " + FemaleNames[dayOfWeek] + " and you were born on " + WeekDays[dayOfWeek];
