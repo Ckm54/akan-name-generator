@@ -75,3 +75,36 @@
 .form .error {
     color: crimson;
 }
+footer {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+@media (max-width: 1000px){
+    .container {
+        display: block;
+        margin-top: 20px;
+    }
+    .heading {
+        font-size: 40px;
+    }
+    .data-form, .summary {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+    .form .form-group {
+        margin-bottom: 5px;
+    }
+    .app-description {
+        font-size: 15px;
+    }
+    footer {
+        font-size: 12px;
+    }
+}
+
