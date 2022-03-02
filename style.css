@@ -1,6 +1,26 @@
 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap');
 
+* {
+    font-family: 'Arvo', serif;
+    font-weight: 500;
+}
 .container {
     display: flex;
+    margin-top: 100px;
+}
+.summary {
+    text-align: justify;
+    padding: 10px;
+    width: 50%;
+    margin-right: 20px;
+}
+.heading {
+    font-size: 60px;
+}
+.data-form {
+    width: 50%;
+    margin-left: 20px;
+    padding: 50px 10px;
 }
