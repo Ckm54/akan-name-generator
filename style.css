@@ -19,8 +19,58 @@
 .heading {
     font-size: 60px;
 }
+.heading span {
+    color: crimson;
+}
+.app-description h3 {
+    margin-left: 10%;
+    font-size: 25px;
+}
+.app-description h3 i {
+    color: crimson;
+    margin-right: 5px;
+}
 .data-form {
     width: 50%;
     margin-left: 20px;
     padding: 50px 10px;
+}
+.form h4 {
+    margin: 20px 0;
+}
+.form .form-group {
+    margin-bottom: 30px;
+    padding: 10px;
+}
+.form .form-group label {
+    margin-bottom: 10px;
+}
+.btn-row {
+    align-items: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 50px;
+}
+.button {
+    border: none;
+    height: 100%;
+    border-radius: 5px;
+    background: crimson;
+    color: #fff;
+    border: 2px solid crimson;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.button:hover {
+    background: none;
+    color: crimson;
+}
+.text-output {
+    margin-top: 10px;
+    font-size: 20px;
+    color: darkgreen;
+    font-weight: 550;
+}
+.form .error {
+    color: crimson;
 }
