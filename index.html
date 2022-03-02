@@ -11,8 +11,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="row">
-            <div class="col-md-10 summary">
+            <div class="summary">
                 <h1 class="heading">Akan <span>Names</span> </h1>
                 <div class="app-description">
                     <p>Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. This application enables users to enter their birth dates and on submitting the information, displays their Akan names.</p>
@@ -43,32 +42,39 @@
                             </ul>
                         </div>
                     </div>
-                </div>
             </div>
         </div>
 
-
-        <form action="#" id="data-form" class="form row col-md-6">
-            <div class="date-row row form-group">
-                <label for="date">Enter your date of birth</label>
-                <input class="form-control form-control-md " type="date" name="birth-date" id="birth-date">
-            </div>
-            <div class="form-group row gender-row">
-                <label for="gender">Choose your gender:</label>
-                <select name="gender" id="gender">
-                    <option value="placeholder">Choose your gender</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                </select>
-            </div>
-            <div class="row btn-row">
-                <button type="button" class="button" value="submit" onclick="getAkanName()">Get Akan Name</button>
-            </div>
-            <p id="output"></p>
-        </form>
-        
+        <div class="data-form ">
+            <form action="#" id="data-form" class="form">
+                <h4>Fill in the form below to check yout Akan name</h4>
+                <div class="date-row row form-group">
+                    <label for="date">Click the calender icon to choose date of birth:</label>
+                    <input class="form-control form-control-md " type="date" name="birth-date" id="birth-date">
+                </div>
+                <div class="form-group row gender-row">
+                    <label for="gender">Choose your gender:</label>
+                    <select name="gender" id="gender">
+                        <option value="placeholder">Choose your gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <div class="row btn-row">
+                    <button type="button" class="button" value="submit" onclick="getAkanName()">Get Akan Name</button>
+                </div>
+                <p id="output"></p>
+            </form>
+        </div>
     </div>
 
+
+    <footer>
+        <p>Designed by | <span><a href="#">CollinsK</a></span> </p>
+        <p>&#169 2022 | All Rights Reserved</p>
+    </footer>
     <script src="./main.js"></script>
+
+    
 </body>
 </html>
