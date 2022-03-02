@@ -1,10 +1,10 @@
 function getAkanName() {
-
-    let dateOfBirth = document.getElementById("birth-date").value
-    let date = dateOfBirth.split("-")
+    let dateOfBirth = document.getElementById("birth-date").value;
+    let date = dateOfBirth.split("-");
     let year = parseInt(date[0]);
     let month = parseInt(date[1]);
     let day = parseInt(date[2]);
+
     let gender = document.getElementById("gender").value;
     const FemaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
     const MaleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
@@ -18,6 +18,12 @@ function getAkanName() {
     
     
     display.innerHTML = dayOfWeek
+    if (dateOfBirth === "" || gender === "") {
+        display.classList.add("error");
+        display.innerHTML = "please input the date and gender";
+    }else {
+        display.classList.remove("error");
+    }
     if(!isNaN(dayOfWeek)){
         if (gender === "male"){
             display.innerHTML = "Your Akan name is " + MaleNames[dayOfWeek] + " and you were born on " + WeekDays[dayOfWeek];
