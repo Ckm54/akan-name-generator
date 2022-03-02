@@ -5,8 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akan Name</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css" type="text/css">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 summary">
+                <h1 class="heading">Akan <span>Names</span> </h1>
+                <div class="app-description">
+                    <p>Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. This application enables users to enter their birth dates and on submitting the information, displays their Akan names.</p>
+                    <p>Here are some</p>
+                </div>
+            </div>
+        </div>
+
+
+        <form action="#" id="data-form" class="form row col-md-6">
+            <div class="date-row row form-group">
+                <label for="date">Enter your date of birth</label>
+                <input class="form-control form-control-md " type="date" name="birth-date" id="birth-date">
+            </div>
+            <div class="form-group row gender-row">
+                <label for="gender">Choose your gender:</label>
+                <select name="gender" id="gender">
+                    <option value="placeholder">Choose your gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <div class="row btn-row">
+                <button type="button" class="button" value="submit">Get Akan Name</button>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
