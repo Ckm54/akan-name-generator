@@ -1,9 +1,9 @@
 function getAkanName() {
     let dateOfBirth = document.getElementById("birth-date").value;
-    let date = dateOfBirth.split("-");
+    let date = new Date(dateOfBirth);
     let year = parseInt(date[0]);
     let month = parseInt(date[1]);
-    let day = parseInt(date[2]);
+    let day = date.getDay();
 
     let gender = document.getElementById("gender").value;
     const FemaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
@@ -24,12 +24,12 @@ function getAkanName() {
     }else {
         display.classList.remove("error");
     }
-    if(!isNaN(dayOfWeek)){
+    if(!isNaN(day)){
         if (gender === "male"){
-            display.innerHTML = "Your Akan name is " + MaleNames[dayOfWeek] + " and you were born on a " + WeekDays[dayOfWeek];
+            display.innerHTML = "Your Akan name is " + MaleNames[day] + " and you were born on a " + WeekDays[day];
         }
         else if (gender === "female"){
-            display.innerHTML = "Your Akan name is " + FemaleNames[dayOfWeek] + " and you were born on " + WeekDays[dayOfWeek];
+            display.innerHTML = "Your Akan name is " + FemaleNames[day] + " and you were born on " + WeekDays[day];
         }
         else {
             alert("Ensure you have chosen a valid birth date and selected a gender");
