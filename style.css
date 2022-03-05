@@ -1,34 +1,54 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap');
 
 * {
     font-family: 'Arvo', serif;
     font-weight: 500;
+    font-size: 25px;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.header {
+    padding-top: 5%;
+    width: 80%;
+    text-align: center;
 }
 .container {
-    display: flex;
-    margin-top: 100px;
+    height: 70%;
 }
 .summary {
     text-align: justify;
     padding: 10px;
-    width: 50%;
-    margin-right: 20px;
+    color: #fff;
+}
+.header h1, .heading span {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 75px;
 }
 .heading {
     font-size: 60px;
+    color: #f05806;
 }
 .heading span {
-    color: crimson;
+    color: #f6be27;
 }
 .app-description h3 {
     margin-left: 10%;
     font-size: 25px;
+    color: #f6be27;
 }
 .app-description h3 i {
-    color: crimson;
+    color: #f05806;
     margin-right: 5px;
+}
+.akan-btn {
+    text-decoration: none;
+    margin: 2px solid #f6be27;
 }
 .data-form {
     width: 50%;
