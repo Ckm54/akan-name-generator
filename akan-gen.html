@@ -10,14 +10,17 @@
 </head>
 <style>
     body {
-        background: url('./cover2.jpg');
+        background: url('./cover2.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
         background-size: cover;
     }
 </style>
 <body>
-    <div class="data-form ">
+    <section class="data-form ">
         <div class="form-heading">
-            <h1>Get Your <span>Akan Name</span> Today</h1>
+            <h1>Get Your <span>Akan Name</span></h1>
             <p>Fill in the form below to check your Akan name</p>
         </div>
         <form action="#" id="data-form" class="form">
@@ -38,9 +41,9 @@
             </div>
             <p id="output" class="text-output"></p>
         </form>
-    </div>
+    </section>
     <footer>
-        <p>Designed by | <span><a href="#">CollinsK</a></span> </p>
+        <p>Designed by | <a href="#">CollinsK</a> </p>
         <p>&#169 2022 | All Rights Reserved</p>
     </footer>
     <script src="./main.js"></script>
