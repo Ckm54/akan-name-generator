@@ -63,11 +63,47 @@ body {
     background: none;
     text-decoration: none;
 }
+/* form styling */
 .data-form {
-    width: 50%;
-    margin-left: 20px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
     padding: 50px 10px;
+    text-align: center;
 }
+.data-form .form-heading h1, .data-form .form-heading h1 span {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 75px;
+}
+.data-form .form-heading h1 {
+    color: #f05806;
+}
+.data-form .form-heading h1 span {
+    color: #f6be27;
+}
+.form-heading p {
+    color: #f6be27;
+    font-size: 35px;
+    font-weight: 500;
+}
+.form .form-group {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+.form-group input, .form-group select {
+    width: 30%;
+    text-align: center;
+    margin-left: 35%;
+    margin-top: 20px;
+}
+input[type="date"]::-webkit-datetime-edit-text,
+input[type="date"]::-webkit-datetime-edit-month-field,
+input[type="date"]::-webkit-datetime-edit-day-field,
+input[type="date"]::-webkit-datetime-edit-year-field {
+  color: #888;
+}
+
 .form h4 {
     margin: 20px 0;
 }
