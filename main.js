@@ -1,8 +1,8 @@
 function getAkanName() {
     let dateOfBirth = document.getElementById("birth-date").value;
     let date = new Date(dateOfBirth);
-    let year = parseInt(date[0]);
-    let month = parseInt(date[1]);
+    let year = date.getFullYear();
+    let month = date.getMonth();
     let day = date.getDay();
 
     let gender = document.getElementById("gender").value;
@@ -26,10 +26,10 @@ function getAkanName() {
     }
     if(!isNaN(day)){
         if (gender === "male"){
-            display.innerHTML = "Your Akan name is " + MaleNames[day] + " and you were born on a " + WeekDays[day];
+            display.innerHTML = "Born on a " + WeekDays[day] + ", your Akan name is " + MaleNames[day];
         }
         else if (gender === "female"){
-            display.innerHTML = "Your Akan name is " + FemaleNames[day] + " and you were born on " + WeekDays[day];
+            display.innerHTML = "Born on a " + WeekDays[day] + ", your Akan name is " + FemaleNames[day];
         }
         else {
             alert("Ensure you have chosen a valid birth date and selected a gender");
