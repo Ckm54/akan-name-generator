@@ -48,7 +48,20 @@ body {
 }
 .akan-btn {
     text-decoration: none;
-    margin: 2px solid #f6be27;
+    border: 2px solid #f05806;
+    background: #f05806;
+    padding: 10px 15px;
+    border-radius: 5px;
+    width: fit-content;
+    transition: all 0.3s ease;
+}
+.akan-btn a {
+    color: #f6be27;
+    text-decoration: none;
+}
+.akan-btn:hover {
+    background: none;
+    text-decoration: none;
 }
 .data-form {
     width: 50%;
@@ -94,7 +107,7 @@ body {
     text-align: center;
 }
 .form .error {
-    color: crimson;
+    color: #f05806;
 }
 footer {
     display: flex;
@@ -102,6 +115,8 @@ footer {
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
+    margin-top: 5%;
+    color: #fff;
 }
 footer a {
     text-decoration: none;
