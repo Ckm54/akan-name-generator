@@ -38,9 +38,9 @@ program to display akan name based on user birth date and gender inputs
 
 * CSS - used to style the page to get its appealing look. 
 
-*JAVASCRIPT - which was used to add functionality of actually calculating the akan name basd on user input.
+* JAVASCRIPT - which was used to add functionality of actually calculating the akan name basd on user input.
 
-*JQUERY - javascript library to add more interractivity.
+* JQUERY - javascript library to add more interractivity.
 
 
 ## Live Link
